@@ -84,6 +84,10 @@
         @include tablet {
             padding-right: 1.5rem;
         }
+
+        @include laptop {
+            padding-right: 2rem;
+        }
     }
 
     @include tablet {

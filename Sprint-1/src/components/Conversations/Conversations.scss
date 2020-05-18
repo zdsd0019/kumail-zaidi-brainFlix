@@ -16,6 +16,11 @@
     border-bottom: 0.1rem solid $silver;
     border-bottom-width: thin;
     padding-bottom: 1.5rem;
+    
+    @include laptop {
+      width:  44.5rem;
+      height: 4rem;
+    }
   }
 
   &-avatar {

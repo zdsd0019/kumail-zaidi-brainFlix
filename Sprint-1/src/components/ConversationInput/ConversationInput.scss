@@ -61,9 +61,6 @@
         }
     }
 
-
-
-
     &-btn {
         @include bluebutton;
         @include mobile-header2-sub-header;
@@ -95,7 +92,7 @@
     }
 }
 
-.avatar__img {
+.conversation__avatar {
     height: 3rem;
     width: 3rem;
     border-radius: 75%;
