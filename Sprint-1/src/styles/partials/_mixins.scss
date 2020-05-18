@@ -105,5 +105,18 @@
     line-height: 1.25rem;
 }
 
+// Button
+@mixin bluebutton {
+    background-color: $brainflix-blue;
+    color: $white;
+    border-radius: 0.25rem;
+    border: 1px solid $brainflix-blue;
+  }
 
+  //Avatar
+  @mixin  avatar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 75%;
+  }
 

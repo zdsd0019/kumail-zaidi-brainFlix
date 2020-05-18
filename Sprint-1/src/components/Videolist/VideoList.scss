@@ -1,0 +1,36 @@
+@import '../../styles/partials/mixins';
+
+.video {
+  // border: 1px solid goldenrod;
+  display: flex;
+  margin-bottom: 1.5rem;
+  // @include flex-relative();
+  
+  &__img {
+    width: 7.5rem;
+    height: 4.375rem;
+    border-radius: 0.25rem;
+    // margin-right: 1rem;
+  }
+  &-text {
+    // border: 1px solid lightskyblue;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &-title {
+    @include mobile-header2-sub-header;
+    // border: 1px solid darkcyan;
+    font-size: 0.7rem;
+    width: 8.75rem;
+    margin: 0;
+  }
+  &-author {
+    @include mobile-header4-paragraph;
+    font-size: 0.65rem;
+    min-width: 9.75rem;
+    margin: 0;
+    padding-top: 1rem;
+  }
+  
+}
