@@ -29,7 +29,6 @@ class Home extends Component {
 		 this.setState({VideoId: results.data[0].id});
 		 console.log(results.data[0].id);
 		})
-	
 		.then(() => {
 		  axios.get(videoidurl (this.state.VideoId))
 		  .then(results => {
@@ -55,10 +54,8 @@ class Home extends Component {
     if( this.props.match.params.id !== prevProps.match.params.id  ) {
       axios
       .get(videoidurl (this.props.match.params.id))
-      // .get(url + '/videos/' + (this.state.id) + ApiKey(this.props.match.params.id))
         .then(results => {
           console.log(url + '/videos/' + (this.state.id) + ApiKey)
-          
           this.setState({
             CurrentVideo: results.data.image,
             CurrentInformation: results.data,
@@ -67,7 +64,6 @@ class Home extends Component {
         })
     }
   }
-
 
       render(){
         return(
@@ -78,7 +74,6 @@ class Home extends Component {
                 <ConversationList ConversationsHistory={this.state.ConversationsHistory} /> {/* displays list of comments */}
                 {/* <NextVideos /> {/* Displays list of next videos */}
                 <VideoListArray NextVideos={this.state.NextVideos} CurrentInformation={this.state.CurrentInformation}/>
-        
             </>
         )
     }
