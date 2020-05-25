@@ -43,14 +43,19 @@
 .search {
     @include mobile-header4-paragraph;
     font-weight: bold;
-    border: 1px solid $silver;
+    border: 1px solid $mercury;
     border-radius: 0.15rem;
     background-image: url('../../assets/icons/svg/icon-search.svg');
     background-repeat: no-repeat;
     background-position: 7%;
-    background-color: $mercury;
+    background-color: $alabaster;
     padding: 1rem;
     padding-left: 3rem;
+
+    &:focus {
+        border: 0.125rem solid $brainflix-blue;
+        outline: none;
+      }
 
     @include tablet {
         margin-right: 1.5rem;

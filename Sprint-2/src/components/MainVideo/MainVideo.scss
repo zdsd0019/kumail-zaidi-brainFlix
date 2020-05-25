@@ -8,17 +8,22 @@
 	width: 18rem;
 
 	&-playing {
-		background-image: url(../../assets/images/video-list-0.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 11.438rem;
+		// background-image: url(../../assets/images/video-list-0.jpg);
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		// height: 11.438rem;
+		width: 100%;
 		margin-top: 1rem;
 		display: flex;
 		align-items: flex-end;
 
+		& :active :visited :link{
+			text-decoration: none;
+			color: $black;
+		}
+
 		@include tablet {
 			margin: 0;
-			height: 25rem;
 			width: 43.75rem;
 		}
 

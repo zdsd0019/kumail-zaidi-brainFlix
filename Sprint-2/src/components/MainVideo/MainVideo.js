@@ -1,13 +1,17 @@
 import React from 'react';
-import Play from '../../assets/icons/svg/icon-play.svg';
-import FullScreen from '../../assets/icons/svg/icon-fullscreen.svg';
-import VolumeButton from '../../assets/icons/svg/icon-volume.svg';
+// import Play from '../../assets/icons/svg/icon-play.svg';
+// import FullScreen from '../../assets/icons/svg/icon-fullscreen.svg';
+// import VolumeButton from '../../assets/icons/svg/icon-volume.svg';
 import './MainVideo.scss';
 
-function MainVideo() {
-	return (
-		/* Note: Did not use Video tag since functionality is not required in this sprint */
-		<div className='video-background'>
+class MainVideo extends React.Component {
+	
+	render() {
+		return (
+			<div>
+				 <video className='currently-playing' poster={this.props.CurrentVideo} ></video>
+				{/* <div className='video-background'>
+           
 			<span className="currently-playing">
 			<div className="currently">
 				<button className="play__btn">
@@ -27,8 +31,11 @@ function MainVideo() {
 				</span>
 			</div>
 		</span>
-		</div>
-		
-	);
+		</div> */}
+			</div>
+		);
+	}
 }
+
 export default MainVideo;
+

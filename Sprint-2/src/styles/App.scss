@@ -10,19 +10,108 @@
   }
 }
 
-.next-video {
-  @include mobile-header4-paragraph;
-  color: $silver;
-  margin: 0;
-  padding-bottom: 2.5rem;
 
-  @include laptop {
-    padding-top: 2.5rem;
+/* UPLOAD PAGE STYLING */
+.upload {
+
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  &-title {
+    @include mobile-header1;
+    margin: 0;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1rem solid $mercury;
+    border-top-width: thin;
+  }
+
+  &-subtitle {
+    @include desk-and-tablet-header5-labels;
+    font-family: Avenir-Bold;
+    font-weight: bold;
+    color: $silver;
+    margin: 0;
+    padding-top: 2rem;
+  }
+
+  &-image {
+    margin: 0;
+    width: 18rem;
+    height: 9.563rem;
+  }
+
+  &-search {
+    @include mobile-header4-paragraph;
+    font-weight: bold;
+    border: 1px solid $mercury;
+    border-radius: 0.15rem;
+    background-color: $alabaster;
+    padding: 1rem;
+    width: 15.9rem;
+  
+    &:focus {
+      border: 0.125rem solid $brainflix-blue;
+      outline: none;
+    }
+  }
+
+  &-box {
+    @include mobile-header4-paragraph;
+    color: $black;
+    font-weight: bolder;
+    border: 1px solid $mercury;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    width: 16.8rem;
+    height: 8.938rem;
+    resize: none;
+    margin-bottom: 1rem;
+    background-color: $alabaster;
+
+    &:focus {
+        border: 0.125rem solid $brainflix-blue;
+        outline: none;
+      }
+  }
+
+  &-description {
+    @include desk-and-tablet-header5-labels;
+    font-family: Avenir-Bold;
+    font-weight: bold;
+    color: $silver;
+    margin: 0;
+    padding-top: 1.5rem;
+  }
+
+  &-btn {
+    @include bluebutton;
+    @include mobile-header2-sub-header;
+    height: 3rem ;
+    width: 17.9rem;
+    
+
+    &:hover{
+        border: 0.125rem solid $brainflix-blue-dark;
+        background-color: $brainflix-blue-dark;
+        outline: none;
+    }
+    
+    &:focus{
+        border: 0.125rem solid $brainflix-blue-dark;
+        background-color: $brainflix-blue-dark;
+        outline: none;
+    }
+
+    &-cancel {
+      @include mobile-header2-sub-header;
+      background-color: $white;
+      color: $brainflix-blue;
+      padding-top: 1.5rem;
+      padding-bottom: 0.5rem;
+      width: 17.9rem;
+      border: none;
+    }
   }
 }
 
-@include laptop {
-  .laptop-style {
-    display: flex;
-  }
-}

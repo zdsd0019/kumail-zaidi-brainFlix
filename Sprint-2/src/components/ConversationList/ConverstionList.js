@@ -1,13 +1,14 @@
 import React from 'react';
-import './Conversations.scss';
+import './ConversationList.scss';
+import image from '../../assets/images/blank.jpg';
 
-const Conversations = props => {   
+const ConversationList = props => {   
   console.log(props);  
   const ConversationsList = props.ConversationsHistory.map((conversations,index) => {   
   return (
   <section className="comments-section" key={conversations.id}>
     <div className="comments-single">
-      <img className="comments-avatar" src={conversations.userAvatar} alt="userAvatar"></img>
+      <img className="comments-avatar" src={image} alt="display pic"></img>
       <article className="comments-text">
         <div className="comments-header">
           <h5 className="comments-user">{conversations.name}</h5>  
@@ -24,4 +25,4 @@ const Conversations = props => {
 
 
 
-export default Conversations;
+export default ConversationList;

@@ -50,8 +50,9 @@
         margin-bottom: 1rem;
 
         &:focus {
-            border: 0.1rem solid $brainflix-blue;
-        }
+            border: 0.125rem solid $brainflix-blue;
+            outline: none;
+          }
 
         @include tablet {
             width: 27.5rem;

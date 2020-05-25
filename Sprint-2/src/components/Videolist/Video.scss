@@ -13,6 +13,11 @@
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
+    
+    & :active :visited :link{
+			text-decoration: none;
+			color: $black;
+		}
   }
   &-title {
     @include mobile-header2-sub-header;
@@ -25,7 +30,8 @@
     font-size: 0.65rem;
     min-width: 9.75rem;
     margin: 0;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    text-decoration: none;
   }
   
   @include laptop {
