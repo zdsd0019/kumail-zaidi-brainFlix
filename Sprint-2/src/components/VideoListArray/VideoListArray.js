@@ -21,7 +21,7 @@ class VideoListArray extends React.Component {
      })
        return (
          <div className="next-video">
-             <h4>NEXT VIDEO</h4>
+             <h4 className='video-heading'>NEXT VIDEO</h4>
            {videoList}
          </div>
        )

@@ -1,5 +1,6 @@
 import React from 'react';
 import AvatarM from '../../assets/images/mohan-muruge.jpg'
+import '../Header/Header.scss';
 
 function Avatar() {
     return (

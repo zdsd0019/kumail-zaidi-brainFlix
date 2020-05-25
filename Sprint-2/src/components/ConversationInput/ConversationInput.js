@@ -7,7 +7,7 @@ function ConversationInput() {
 		<div className="conversation">
 			<h1 className="conversation-heading">3 Comments</h1>
 			<article className="conversation-article">
-				<span>
+				<span className="conversation-avatar">
 					<AvatarMohan />
 				</span>
 				<span className="conversation-container">

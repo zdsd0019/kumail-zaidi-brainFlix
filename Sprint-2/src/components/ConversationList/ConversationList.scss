@@ -25,7 +25,7 @@
 
   &-avatar {
     @include avatar;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 
     @include tablet {
       margin-right: 1rem;
