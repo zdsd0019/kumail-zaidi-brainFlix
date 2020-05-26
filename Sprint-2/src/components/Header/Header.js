@@ -16,7 +16,7 @@ function Header() {
 			</p>
 			<Search />
 			<p className='nav'>
-			<Link to={'/upload'} >
+			<Link to={'/upload'} className="nav-decoration" > 
 				<UploadBtn />
 			</Link>
 				<AvatarMohan />

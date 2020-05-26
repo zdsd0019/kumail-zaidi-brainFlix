@@ -38,6 +38,7 @@ class Home extends Component {
             console.log(results.data.description)
             console.log(results.data.comments)
             console.log(results.data);
+            console.log('duration', results.data.duration)
 			this.setState({ 
 			      CurrentVideo: results.data.image,
             CurrentInformation: results.data,

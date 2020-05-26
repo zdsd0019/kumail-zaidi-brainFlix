@@ -13,6 +13,7 @@
 		margin-top: 1rem;
 		display: flex;
 		align-items: flex-end;
+		position: relative;
 
 		& :active :visited :link{
 			text-decoration: none;
@@ -150,6 +151,15 @@ progress::-webkit-progress-bar {
 		width: 3rem;
 	}
 }
+
+.postioning {
+	position: absolute;
+	display: flex;
+}
+
+// .fullscreen {
+// 	background: $black;
+// }
 
 @include tablet {
 	.video-background {
