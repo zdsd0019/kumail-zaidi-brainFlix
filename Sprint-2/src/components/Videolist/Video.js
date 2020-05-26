@@ -4,7 +4,6 @@ import './Video.scss'
 class Video extends React.Component {
   render () {
     return (
-
       <section className="video" key={this.props.id}>
       <img className="video__img" src={this.props.image} alt="video" />
       <div className="video-text">
@@ -12,7 +11,6 @@ class Video extends React.Component {
         <span className="video-author">{this.props.channel}</span>
       </div>
     </section>
-
     )
   }
 }

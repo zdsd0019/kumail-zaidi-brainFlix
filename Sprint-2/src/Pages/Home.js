@@ -69,11 +69,15 @@ class Home extends Component {
         return(
             <>
                 <MainVideo CurrentVideo= { this.state.CurrentVideo }/> {/* Shows the Main/Current video */}
+                <span className='aside'>
+                  <span>
                  <VideoDescription CurrentInformation= { this.state.CurrentInformation } /> {/* contains Video title,author name, date, description, views, likes  */}
                 <ConversationInput /> {/* Displays conversation input box */}
+
                 <ConversationList ConversationsHistory={this.state.ConversationsHistory} /> {/* displays list of comments */}
-                {/* <NextVideos /> {/* Displays list of next videos */}
-                <VideoListArray NextVideos={this.state.NextVideos} CurrentInformation={this.state.CurrentInformation}/>
+                </span>
+                <VideoListArray NextVideos={this.state.NextVideos} CurrentInformation={this.state.CurrentInformation}/> {/* Displays list of next videos */}
+                </span>
             </>
         )
     }

@@ -1,12 +1,11 @@
 @import './partials/mixins';
 
 .aside {
-  padding-left: 1rem;
-  padding-right: 1rem;
 
   @include laptop {
     padding: 0;
-    padding-top: 1.5rem;
+    display: flex;
+
   }
 }
 

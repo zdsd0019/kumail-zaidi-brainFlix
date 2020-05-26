@@ -13,7 +13,7 @@
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
-    
+
     & :active :visited :link{
 			text-decoration: none;
 			color: $black;
@@ -35,6 +35,6 @@
   }
   
   @include laptop {
-    margin-bottom: 2.2rem;
+    margin-bottom: 2.92rem;
   }
 }

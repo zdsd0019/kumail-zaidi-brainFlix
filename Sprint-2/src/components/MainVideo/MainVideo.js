@@ -8,7 +8,7 @@ class MainVideo extends React.Component {
 	
 	render() {
 		return (
-			<div>
+			<div className="currently">
 				 <video className='currently-playing' poster={this.props.CurrentVideo} ></video>
 				{/* <div className='video-background'>
            

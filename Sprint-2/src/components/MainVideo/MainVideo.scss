@@ -1,11 +1,12 @@
 @import '../../styles/partials/mixins';
 
+
 .currently {
-	padding-left: 1rem;
-	padding-right: 1rem;
+	// padding-left: 1rem;
+	// padding-right: 1rem;
 	display: flex;
 	align-items: flex-end;
-	width: 18rem;
+	// width: 18rem;
 
 	&-playing {
 		width: 100%;
@@ -20,6 +21,7 @@
 
 		@include tablet {
 			margin: 0;
+			width: 43.75rem;
 		}
 
 		@include laptop {
@@ -29,8 +31,8 @@
 	}
 
 	@include tablet {
-		padding-left: 0.5rem;
-		width: 100%;
+		justify-content: center;
+		background-color: $black;
 	}
 
 	@include laptop {
