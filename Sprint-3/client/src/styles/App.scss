@@ -1,0 +1,187 @@
+@import './partials/mixins';
+
+.aside {
+
+  @include laptop {
+    padding: 0;
+    display: flex;
+
+  }
+}
+
+
+/* UPLOAD PAGE STYLING */
+.upload {
+
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  &-title {
+    @include mobile-header1;
+    margin: 0;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1rem solid $mercury;
+    border-top-width: thin;
+
+    @include tablet {
+      @include desk-and-tablet-header1;
+      padding-top: 3rem;
+      border-bottom: 1rem solid $mercury;
+      border-bottom-width: thin;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &-subtitle {
+    @include desk-and-tablet-header5-labels;
+    font-family: Avenir-Bold;
+    font-weight: bold;
+    color: $silver;
+    margin: 0;
+    padding-top: 2rem;
+
+    @include tablet {
+      padding-top: 2.5rem;
+    }
+  }
+
+  &-image {
+    margin: 0;
+    width: 18rem;
+    height: 9.563rem;
+
+    @include tablet {
+      width: 21.5rem;
+      height: 11.438rem;
+    }
+  }
+
+  &-search {
+    @include mobile-header4-paragraph;
+    font-weight: bold;
+    border: 1px solid $mercury;
+    border-radius: 0.15rem;
+    background-color: $alabaster;
+    padding: 1rem;
+    width: 15.9rem;
+  
+    &:focus {
+      border: 0.125rem solid $brainflix-blue;
+      outline: none;
+    }
+
+    @include tablet {
+      width: 42.9rem;
+    }
+  }
+
+  &-box {
+    @include mobile-header4-paragraph;
+    color: $black;
+    font-weight: bolder;
+    border: 1px solid $mercury;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    width: 16.8rem;
+    height: 8.938rem;
+    resize: none;
+    margin-bottom: 1rem;
+    background-color: $alabaster;
+
+    &:focus {
+        border: 0.125rem solid $brainflix-blue;
+        outline: none;
+      }
+      @include tablet {
+        width: 42.9rem;
+        margin: 0;
+        margin-bottom: 2.5rem;
+      }
+  }
+
+  &-description {
+    @include desk-and-tablet-header5-labels;
+    font-family: Avenir-Bold;
+    font-weight: bold;
+    color: $silver;
+    margin: 0;
+    padding-top: 1.5rem;
+  }
+
+  &-btn {
+    @include bluebutton;
+    @include mobile-header2-sub-header;
+    height: 3rem ;
+    width: 17.9rem;
+    
+
+    &:hover{
+        border: 0.125rem solid $brainflix-blue-dark;
+        background-color: $brainflix-blue-dark;
+        outline: none;
+    }
+    
+    &:focus{
+        border: 0.125rem solid $brainflix-blue-dark;
+        background-color: $brainflix-blue-dark;
+        outline: none;
+    }
+
+    &-cancel {
+      @include mobile-header2-sub-header;
+      background-color: $white;
+      color: $brainflix-blue;
+      padding-top: 1.5rem;
+      padding-bottom: 0.5rem;
+      width: 17.9rem;
+      border: none;
+
+      @include tablet {
+        width: unset;
+      padding-right: 3rem;
+      }
+    }
+
+    @include tablet {
+      width: 10rem;
+    }
+  }
+
+  @include tablet {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@include tablet {
+    .tablet{
+      &-btn {
+        display: flex;
+        flex-direction: row-reverse;
+        border-top: 1rem solid $mercury;
+        border-top-width: thin;
+        padding-top: 2.5rem;
+        align-items: baseline;
+        margin-bottom: 2rem;
+      }
+  }
+}
+
+@include laptop {
+  .desktop {
+    &-body {
+      display: flex;
+    }
+    &-align {
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+
+.nav-decoration {
+  text-decoration: none;
+  color: $black;
+}
+
