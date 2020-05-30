@@ -23,10 +23,6 @@ router.get('/:id', (request, response) => {
 });
 
 router.post('/', (request, response) => {
-	// console.log('request.body');
-	// console.log('request.body.image');
-	// console.log('request.body.title');
-	// console.log('request.body.channel');
 	const uniqueVideo = {
 		id: uniqid(),
 		title: request.body.title,
