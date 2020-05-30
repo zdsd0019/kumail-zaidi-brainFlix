@@ -6,9 +6,9 @@ import VideoDescription from '../components/VideoDescription/VideoDescription'
 import VideoListArray from '../components/VideoListArray/VideoListArray';
 import ConversationList from '../components/ConversationList/ConverstionList';
 
-const url ='http://localhost:8080';
+const url = process.env.REACT_APP_API_URL;
 const ApiKey = "?api_key=c033b9a6-1ff6-4ae1-b4a0-7681282c5e6b";
-const videoidurl = id => `http://localhost:8080/videos/${id}${ApiKey}`
+const videoidurl = id => `${url}/videos/${id}${ApiKey}`
 
 
 class Home extends Component {
