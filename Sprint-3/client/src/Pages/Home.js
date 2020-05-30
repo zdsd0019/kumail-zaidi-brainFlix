@@ -25,10 +25,8 @@ class Home extends Component {
 	  componentDidMount() {
 		axios.get(url + '/videos')
 		.then(results => {
-		 console.log(results);
 		 this.setState({ NextVideos: results.data });
 		 this.setState({VideoId: results.data[0].id});
-		 console.log(results.data[0].id);
 		})
 		.then(() => {
 		  axios.get(videoidurl (this.state.VideoId))
@@ -52,7 +50,7 @@ class Home extends Component {
             CurrentVideo: results.data.image,
             CurrentInformation: results.data,
             ConversationsHistory: results.data.comments,
-            CurrentlyPlaying: results.data.video
+            CurrentlyPlaying: results.data.video + ApiKey
           })
         })
     }

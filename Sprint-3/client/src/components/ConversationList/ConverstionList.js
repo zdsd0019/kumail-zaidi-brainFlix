@@ -3,7 +3,6 @@ import './ConversationList.scss';
 import image from '../../assets/images/blank.jpg';
 
 const ConversationList = props => {   
-  console.log(props);  
   const ConversationsList = props.ConversationsHistory.map((conversations,index) => {   
   return (
   <section className="comments-section" key={conversations.id}>

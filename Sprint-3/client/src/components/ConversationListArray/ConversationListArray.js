@@ -15,8 +15,6 @@ class ConversationListArray extends Component {
 	componentDidMount() {
 		axios.get(url + '/videos/' + (this.state.VideoId) + ApiKey)
 		.then(results => {
-			console.log(results)
-			  console.log(results.data.comments)
 			  this.setState({
 				ConversationListArray: results.data.comments,
 			  })

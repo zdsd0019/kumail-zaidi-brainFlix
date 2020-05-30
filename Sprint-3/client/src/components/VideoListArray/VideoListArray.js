@@ -9,7 +9,6 @@ class VideoListArray extends React.Component {
      let videoList = this.props.NextVideos.filter((video) => {
        return video.id !== this.props.CurrentInformation.id
      }).map((video, i) => {
-        // console.log('videoID', video.id);
        return <Link to={'/videos/' + video.id} key={video.id} className='nav-decoration' >
        <Video 
     //    id={video.id}
