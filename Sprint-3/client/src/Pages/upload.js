@@ -37,7 +37,7 @@ class upload extends React.Component {
 						className="upload-search"
                         placeholder="Add a title to your video"
                         onChange={this.handleInputChange}
-                        value={this.state.type}
+                        value={this.state.name}
 						required
 					/>
 					<h5 className="upload-description">ADD A VIDEO DESCRIPTION</h5>
