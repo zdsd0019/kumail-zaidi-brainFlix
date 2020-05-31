@@ -12,20 +12,20 @@ class VideoDescription extends React.Component {
         return (
             <>
               <section className='title-section'>
-        <h1 className='title'>{this.props.CurrentInformation.title}</h1>
+        <h1 className='title'>{this.props.currentInformation.title}</h1>
           <article className='article'>
             <div className="author">
-              <span className="author__video">{this.props.CurrentInformation.channel}</span>
-              <span className="author__date">{videoDate(this.props.CurrentInformation.timestamp)}</span>
+              <span className="author__video">{this.props.currentInformation.channel}</span>
+              <span className="author__date">{videoDate(this.props.currentInformation.timestamp)}</span>
             </div>
             <div className="total">
-              <span className='total-align'><img src={Views} alt="Total View" className='total-views'></img>{this.props.CurrentInformation.views}</span>
-              <span className='total-align'><img src={Likes} alt="Total Likes" className='total-likes'></img>{this.props.CurrentInformation.likes}</span>
+              <span className='total-align'><img src={Views} alt="Total View" className='total-views'></img>{this.props.currentInformation.views}</span>
+              <span className='total-align'><img src={Likes} alt="Total Likes" className='total-likes'></img>{this.props.currentInformation.likes}</span>
             </div>
           </article>
           <div>
             <p className="description">
-              {this.props.CurrentInformation.description}
+              {this.props.currentInformation.description}
             </p>
           </div>
         </section>  

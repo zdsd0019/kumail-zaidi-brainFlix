@@ -5,7 +5,7 @@ class MainVideo extends React.Component {
 	render() {
 		return (
 
-			<video src={ this.props.CurrentlyPlaying } poster={ this.props.CurrentVideo } className="currently-playing" controls ></video>
+			<video src={ this.props.currentlyPlaying } poster={ this.props.currentVideo } className="currently-playing" controls ></video>
 
 		);
 	}

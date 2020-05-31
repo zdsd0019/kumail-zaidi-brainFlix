@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import VideoUploadForm from '../components/VideoUploadForm/VideoUploadForm'
+import VideoUploadForm from '../../components/VideoUploadForm/VideoUploadForm'
+import VideoListArray from '../../components/VideoListArray/VideoListArray';
 const url = process.env.REACT_APP_API_URL;
 
 
@@ -18,7 +19,7 @@ class upload extends React.Component {
 
     handleVideoSubmit = videos => {
         axios
-            .post(`${url}/videos`, videos)
+            .post(`${url}/videos`, VideoListArray)
             .then(request => console.log('Video was Successfully Uploaded'));
     }
 

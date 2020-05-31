@@ -3,7 +3,7 @@ import './ConversationList.scss';
 import image from '../../assets/images/blank.jpg';
 
 const ConversationList = props => {   
-  const ConversationsList = props.ConversationsHistory.map((conversations,index) => {   
+  const conversationsList = props.conversationsHistory.map((conversations,index) => {   
   return (
   <section className="comments-section" key={conversations.id}>
     <div className="comments-single">
@@ -19,7 +19,7 @@ const ConversationList = props => {
   </section>      
       )
 })
-   return (<div>{ConversationsList}</div>)
+   return (<div>{conversationsList}</div>)
 }
 
 
