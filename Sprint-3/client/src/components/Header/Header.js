@@ -1,9 +1,9 @@
 import React from 'react';
-import Logo from '../Logo/Logo';
-import Search from '../SearchBar/SearchBar';
-import UploadBtn from '../UploadButton/UploadBtn';
-import AvatarMohan from '../Avatar/Avatar';
-import '../Header/Header.scss';
+import Logo from '../logo/logo';
+import Search from '../searchBar/searchBar';
+import UploadBtn from '../uploadButton/uploadBtn';
+import AvatarMohan from '../avatar/avatar';
+import './header.scss';
 import { Link } from 'react-router-dom';
 
 function Header() {

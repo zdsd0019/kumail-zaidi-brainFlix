@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import axios from './node_modules/axios';
 
 
 const url ='https://project-2-api.herokuapp.com';

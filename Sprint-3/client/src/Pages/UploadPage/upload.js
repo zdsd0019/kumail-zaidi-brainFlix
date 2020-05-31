@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import VideoUploadForm from '../../components/VideoUploadForm/VideoUploadForm'
+import VideoUploadForm from '../../components/videoUploadForm/videoUploadForm'
 import VideoListArray from '../../components/VideoListArray/VideoListArray';
 const url = process.env.REACT_APP_API_URL;
 

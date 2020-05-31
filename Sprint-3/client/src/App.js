@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {  Switch, Route  } from 'react-router-dom';
-import Home from './Pages/HomePage/Home'
-import Header from './components/Header/Header'
-import Upload from './Pages/UploadPage/upload';
+import Home from './pages/homePage/home'
+import Header from './components/header/header'
+import Upload from './pages/uploadPage/upload';
 import './styles/App.scss';
 
 class App extends Component {

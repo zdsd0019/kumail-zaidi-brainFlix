@@ -1,6 +1,6 @@
 import React from 'react';
-import AvatarMohan from '../Avatar/Avatar';
-import './ConversationInput.scss';
+import AvatarMohan from '../avatar/avatar';
+import './conversationInput.scss';
 
 function ConversationInput() {
 	return (

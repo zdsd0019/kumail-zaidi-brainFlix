@@ -1,5 +1,5 @@
 import React from 'react';
-import './ConversationList.scss';
+import './conversationList.scss';
 import image from '../../assets/images/blank.jpg';
 
 const ConversationList = props => {   

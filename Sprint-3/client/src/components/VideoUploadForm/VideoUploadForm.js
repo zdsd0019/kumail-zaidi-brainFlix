@@ -1,5 +1,5 @@
-import React from 'react'
-import './VideoUploadForm.scss'
+import React from 'react';
+import './videoUploadForm.scss'
 import uploadpic from '../../assets/images/upload-video-preview.jpg';
 
    

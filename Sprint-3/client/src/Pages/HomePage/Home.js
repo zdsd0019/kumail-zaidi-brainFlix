@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MainVideo from '../../components/MainVideo/MainVideo'
-import ConversationInput from '../../components/ConversationInput/ConversationInput'
-import VideoDescription from '../../components/VideoDescription/VideoDescription'
+import MainVideo from '../../components/mainVideo/mainVideo'
+import ConversationInput from '../../components/conversationInput/conversationInput'
+import VideoDescription from '../../components/videoDescription/videoDescription'
 import VideoListArray from '../../components/VideoListArray/VideoListArray';
-import ConversationList from '../../components/ConversationList/ConverstionList';
+import ConversationList from '../../components/conversationList/converstionList';
 
 const url = process.env.REACT_APP_API_URL;
 const ApiKey = "?api_key=c033b9a6-1ff6-4ae1-b4a0-7681282c5e6b";

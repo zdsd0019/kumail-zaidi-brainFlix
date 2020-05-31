@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainVideo.scss';
+import './mainVideo.scss';
 
 class MainVideo extends React.Component {
 	render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Views from '../../assets/icons/svg/icon-views.svg';
 import Likes from '../../assets/icons/svg/icon-likes.svg';
-import './VideoTitle.scss';
+import './videoTitle.scss';
 
 const videoDate = (date) => {
     return new Date(date).toLocaleDateString()

@@ -1,5 +1,5 @@
 import React from 'react';
-import Video from '../Videolist/Video'
+import Video from '../videos/videos'
 import './VideListArray.scss'
 import { Link } from 'react-router-dom';
 
