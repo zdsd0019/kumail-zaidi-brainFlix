@@ -6,7 +6,7 @@ function ConversationInput() {
 	return (
 		<div className="conversation">
 			<h1 className="conversation-heading">3 Comments</h1>
-			<article className="conversation-article">
+			<form className="conversation-input">
 				<span className="conversation-avatar">
 					<AvatarMohan />
 				</span>
@@ -17,7 +17,7 @@ function ConversationInput() {
 						<button className="conversation-btn">COMMENT</button>
 					</form>
 				</span>
-			</article>
+			</form>
 		</div>
 	);
 }

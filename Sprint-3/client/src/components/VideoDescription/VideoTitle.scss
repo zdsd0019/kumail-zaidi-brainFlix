@@ -22,17 +22,8 @@
     }
 }
 
-.article {
-    border-bottom: 0.01rem solid $silver;
-    border-bottom-width: thin ;
-    padding-bottom: 1.5rem;
 
-    @include tablet {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
+
 
 .author {
     padding-top: 1rem;
@@ -45,6 +36,18 @@
         @include tablet {
             @include desk-and-tablet-header2-sub-header;
             font-size: 1rem;
+        }
+
+        &-container {
+            border-bottom: 0.01rem solid $silver;
+            border-bottom-width: thin ;
+            padding-bottom: 1.5rem;
+        
+            @include tablet {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
     }
 

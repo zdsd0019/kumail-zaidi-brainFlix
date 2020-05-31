@@ -13,7 +13,7 @@ class VideoDescription extends React.Component {
             <>
               <section className='title-section'>
         <h1 className='title'>{this.props.currentInformation.title}</h1>
-          <article className='article'>
+          <span className='author-container'>
             <div className="author">
               <span className="author__video">{this.props.currentInformation.channel}</span>
               <span className="author__date">{videoDate(this.props.currentInformation.timestamp)}</span>
@@ -22,7 +22,7 @@ class VideoDescription extends React.Component {
               <span className='total-align'><img src={Views} alt="Total View" className='total-views'></img>{this.props.currentInformation.views}</span>
               <span className='total-align'><img src={Likes} alt="Total Likes" className='total-likes'></img>{this.props.currentInformation.likes}</span>
             </div>
-          </article>
+          </span>
           <div>
             <p className="description">
               {this.props.currentInformation.description}

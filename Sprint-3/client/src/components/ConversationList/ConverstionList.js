@@ -8,13 +8,13 @@ const ConversationList = props => {
   <section className="comments-section" key={conversations.id}>
     <div className="comments-single">
       <img className="comments-avatar" src={image} alt="display pic"></img>
-      <article className="comments-text">
+      <span className="comments-text">
         <div className="comments-header">
           <h5 className="comments-user">{conversations.name}</h5>  
           <span className="comments-date">{conversations.date}</span>
         </div>  
         <span className="comments-paragraph">{conversations.comment}</span>
-      </article>
+      </span>
     </div>
   </section>      
       )
