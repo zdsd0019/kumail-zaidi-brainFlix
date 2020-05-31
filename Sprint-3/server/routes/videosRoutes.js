@@ -19,7 +19,7 @@ router.get('/:id', (request, response) => {
 	const NextVideo = nextVideo.find(video => {
 		return video.id === id;
 	});
-	response.status(200).statusjson(NextVideo);
+	response.status(200).json(NextVideo);
 });
 
 router.post('/', (request, response) => {
