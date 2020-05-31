@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../logo/logo';
 import Search from '../searchBar/searchBar';
 import UploadBtn from '../uploadButton/uploadBtn';
-import AvatarMohan from '../avatar/avatar';
+import Avatar from '../avatar/avatar';
 import './header.scss';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ function Header() {
 			<Link to={'/upload'} className="nav-decoration" > 
 				<UploadBtn />
 			</Link>
-				<AvatarMohan />
+				<Avatar />
 			</p>
 		</span>
 	);

@@ -24,10 +24,11 @@ router.get('/:id', (request, response) => {
 
 router.post('/', (request, response) => {
 	const uniqueVideo = {
-		id: uniqid(),
-		title: request.body.title,
-		image: request.body.image,
-		channel: request.body.channel
+		// id: uniqid(),
+		// title: request.body.title,
+		// image: request.body.image,
+		// channel: request.body.channel
+		
 	};
 	
 	currentInformation = {
