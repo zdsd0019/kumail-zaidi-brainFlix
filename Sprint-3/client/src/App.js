@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
      <>
-     <Route path='/' component={Header} />
+     <Header />
       <Switch>
         <Route path='/' exact component={Home} />;
         <Route path="/upload" component={Upload} />
