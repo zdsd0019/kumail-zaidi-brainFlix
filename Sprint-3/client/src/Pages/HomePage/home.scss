@@ -1,0 +1,10 @@
+@import '../../styles/partials/mixins';
+
+.aside {
+
+  @include laptop {
+    padding: 0;
+    display: flex;
+
+  }
+}

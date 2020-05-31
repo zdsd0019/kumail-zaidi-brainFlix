@@ -5,6 +5,7 @@ import ConversationInput from '../../components/conversationInput/conversationIn
 import VideoDescription from '../../components/videoDescription/videoDescription'
 import VideoListArray from '../../components/VideoListArray/VideoListArray';
 import ConversationList from '../../components/conversationList/converstionList';
+import './home.scss'
 
 const url = process.env.REACT_APP_API_URL;
 const ApiKey = "?api_key=c033b9a6-1ff6-4ae1-b4a0-7681282c5e6b";
