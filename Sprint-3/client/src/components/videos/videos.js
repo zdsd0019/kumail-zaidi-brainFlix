@@ -1,5 +1,5 @@
 import React from 'react';
-import './video.scss';
+import './videos.scss';
 
 class Video extends React.Component {
   render () {
