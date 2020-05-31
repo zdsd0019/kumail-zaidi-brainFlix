@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from './node_modules/axios';
+import axios from 'axios';
 
 
 const url ='https://project-2-api.herokuapp.com';
@@ -18,7 +18,16 @@ class ConversationListArray extends Component {
 				conversationListArray: results.data.comments,
 			  })
 		})
+		.then(results => {
+			axios.get(url + '/videos/' + (this.state.videoId) + ApiKey)
+			.catch(() => {
+				console.error(
+				'Something Went Wrong!!!'
+				);
+			});
+		})
 	}
+	
 	render() {
 		return (
 			<>

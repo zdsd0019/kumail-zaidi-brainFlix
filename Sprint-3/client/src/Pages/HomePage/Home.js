@@ -39,7 +39,16 @@ class Home extends Component {
 			  })
 		  })
     })
+    .then(results => {
+      axios.get(videoidurl (this.state.videoId))
+      .catch(() => {
+        console.error(
+        'Something Went Wrong!!!'
+        );
+      });
+    })
   }
+    
 
   componentDidUpdate(prevProps) {
     if( this.props.match.params.id !== prevProps.match.params.id  ) {

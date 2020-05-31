@@ -21,7 +21,9 @@ class upload extends React.Component {
         axios
             .post(`${url}/videos`, VideoListArray)
             .then(request => console.log('Video was Successfully Uploaded'));
+            
     }
+   
 
     render() {
         return (

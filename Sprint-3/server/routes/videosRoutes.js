@@ -2,7 +2,7 @@ const express = require ('express');
 const router = express.Router();
 const videos = require ('./videos.json');
 const nextVideo = require ('./videosListArray.json');
-let uniqid = require('uniqid');
+const uniqid = require('uniqid');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -11,7 +11,7 @@ router.use(cors());
 router.use(bodyParser.json());
 
 router.get('/', (request, response) => {
-    response.json(videos);
+	response.status(200).json(videos);
 });
 
 router.get('/:id', (request, response) => {
@@ -19,7 +19,7 @@ router.get('/:id', (request, response) => {
 	const NextVideo = nextVideo.find(video => {
 		return video.id === id;
 	});
-	response.json(NextVideo);
+	response.status(200).statusjson(NextVideo);
 });
 
 router.post('/', (request, response) => {
