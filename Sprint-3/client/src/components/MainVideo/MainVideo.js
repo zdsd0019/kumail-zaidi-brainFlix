@@ -1,16 +1,16 @@
 import React from 'react';
-import './mainVideo.scss';
+import './MainVideo.scss';
 
 class MainVideo extends React.Component {
 	render() {
 		return (
-			<span className='video-background'>
-					<video
-				src={this.props.currentlyPlaying}
-				poster={this.props.currentVideo}
-				className="currently-playing "
-				controls
-			/>
+			<span className="video-background">
+				<video
+					src={this.props.currentlyPlaying}
+					poster={this.props.currentVideo}
+					className="currently-playing "
+					controls
+				/>
 			</span>
 		);
 	}

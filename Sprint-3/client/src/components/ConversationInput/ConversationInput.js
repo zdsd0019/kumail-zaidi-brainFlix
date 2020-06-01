@@ -1,6 +1,6 @@
 import React from 'react';
-import Avatar from '../avatar/avatar';
-import './conversationInput.scss';
+import Avatar from '../Avatar/Avatar';
+import './ConversationInput.scss';
 
 function ConversationInput() {
 	return (
@@ -13,7 +13,12 @@ function ConversationInput() {
 				<span className="conversation-container">
 					<span className="conversation-title">JOIN THE CONVERSATION</span>
 					<span className="conversation-form">
-						<textarea className="conversation-box" name="conversation-box" placeholder="Add a new comment" required/>
+						<textarea
+							className="conversation-box"
+							name="conversation-box"
+							placeholder="Add a new comment"
+							required
+						/>
 						<button className="conversation-btn">COMMENT</button>
 					</span>
 				</span>

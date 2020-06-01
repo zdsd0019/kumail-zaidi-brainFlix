@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MainVideo from '../../components/mainVideo/mainVideo'
-import ConversationInput from '../../components/conversationInput/conversationInput'
-import VideoDescription from '../../components/videoDescription/videoDescription'
+import MainVideo from '../../components/MainVideo/MainVideo'
+import ConversationInput from '../../components/ConversationInput/ConversationInput'
+import VideoDescription from '../../components/VideoDescription/VideoDescription'
 import VideoListArray from '../../components/VideoListArray/VideoListArray';
-import ConversationList from '../../components/conversationList/converstionList';
+import ConversationList from '../../components/ConversationList/ConverstionList';
 import './home.scss'
 
 const url = process.env.REACT_APP_API_URL;
@@ -27,7 +27,7 @@ class Home extends Component {
 		axios.get(url + '/videos')
 		.then(results => {
 		 this.setState({ nextVideos: results.data });
-		 this.setState({videoId: results.data[0].id});
+     this.setState({videoId: results.data[0].id});
 		})
 		.then(() => {
 		  axios.get(videoidurl (this.state.videoId))
@@ -52,7 +52,30 @@ class Home extends Component {
     
 
   componentDidUpdate(prevProps) {
-    if( this.props.match.params.id !== prevProps.match.params.id  ) {
+    if( this.props.match.params.id !== prevProps.match.params.id &&  !this.props.match.params.id  ){
+      
+            axios.get(`${url}/videos`)
+            .then(results =>{
+      
+              this.setState({
+                videoId: results.data[0].id
+                
+                
+              })
+            })
+            .then(() => {
+              axios.get(videoidurl (this.state.videoId))
+              .then(results => {
+              this.setState({ 
+                    currentVideo: results.data.image,
+                    currentInformation: results.data,
+                    conversationsHistory: results.data.comments,
+                    currentlyPlaying: results.data.video + ApiKey 
+                })
+              })
+            })
+    }  
+    else if( this.props.match.params.id !== prevProps.match.params.id  ) {
       axios
       .get(videoidurl (this.props.match.params.id))
         .then(results => {
@@ -60,10 +83,13 @@ class Home extends Component {
             currentVideo: results.data.image,
             currentInformation: results.data,
             conversationsHistory: results.data.comments,
-            currentlyPlaying: results.data.video + ApiKey
+            currentlyPlaying: results.data.video + ApiKey,
+            videoId: results.data.id
           })
         })
     }
+    
+  
   }
 
       render(){
