@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
 import Home from './Pages/HomePage/Home';
 import Header from './components/Header/Header';
-import Upload from './Pages/UploadPage/Upload';
+import Upload from './Pages/UploadPage/upload.js';
 import './styles/App.scss';
 
 class App extends Component {
