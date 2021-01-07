@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
 	return (
-		<span className="header__section mobile-padding">
+		<header className="header__section mobile-padding">
 			<p className="logo">
 				<Link to="/">
 					<Logo />
@@ -21,7 +21,7 @@ function Header() {
 				</Link>
 				<Avatar />
 			</p>
-		</span>
+		</header>
 	);
 }
 
