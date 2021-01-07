@@ -1,0 +1,16 @@
+@import '../../../Styles/Partials/main.scss';
+
+.uploader {
+    &_container {
+    width: 3rem;
+    height: 31.25vw;
+    display: flex;
+    align-self: flex-end;
+    }
+
+    &_avatar {
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+    }
+}

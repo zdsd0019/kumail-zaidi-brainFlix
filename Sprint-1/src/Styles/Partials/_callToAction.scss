@@ -1,0 +1,21 @@
+@import './colors.scss';
+
+//  basic button
+@mixin basic-button {
+    background-color: $primary-cta-and-text-link;
+    color: $white;
+    border: 0.0625rem solid $brainflix-blue;
+    border-radius: 0.25rem;
+    width: 68.75vw;
+    height: 7vh;
+    &:hover{
+        background-color: $brainflix-blue-dark;
+    }
+}
+
+  //Avatar
+  @mixin  avatar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 75%;
+  }

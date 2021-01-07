@@ -1,0 +1,8 @@
+@import '../../../Styles/Partials/main.scss';
+
+.conversation_heading {
+    @include h5-labels-m;
+    font-weight: bold;
+    width: 72vw;
+    text-align: end;
+}

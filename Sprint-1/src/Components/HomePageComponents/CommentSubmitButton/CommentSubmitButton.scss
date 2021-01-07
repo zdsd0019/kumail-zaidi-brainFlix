@@ -1,0 +1,7 @@
+@import '../../../Styles/Partials/main.scss';
+
+
+.submit_button {
+   @include basic-button;
+   margin-bottom: 1.5rem;
+}

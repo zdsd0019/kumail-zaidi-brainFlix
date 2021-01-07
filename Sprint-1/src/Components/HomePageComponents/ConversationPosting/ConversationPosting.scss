@@ -1,0 +1,9 @@
+@import '../../../Styles/Partials/main.scss';
+
+.grouping {
+    @include divider;
+    display: flex;
+    padding-bottom: 5.621rem;
+    // width: 88.546794271234226vw;
+    width: 90vw;
+}

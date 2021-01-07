@@ -1,0 +1,13 @@
+@import '../../../Styles/Partials/main.scss';
+
+
+.main_article {
+    @include offset;
+    @include h5-labels-m;
+    display: flex;
+    font-size: 0.7543rem;
+    line-height: 1rem;
+    color: $black;
+    height: unset;
+    margin-bottom: 2.5rem;
+}

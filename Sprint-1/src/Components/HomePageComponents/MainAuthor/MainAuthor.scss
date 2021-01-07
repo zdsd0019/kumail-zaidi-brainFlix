@@ -1,0 +1,10 @@
+@import '../../../Styles/Partials/main.scss';
+
+.author_container {
+    @include h2-subheader-m;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    height: 3vh;
+    width: 21vw;
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,10 @@
+@import '../../../Styles/Partials/main.scss';
+
+.title_container {
+    // @include offset;
+    @include h1-header-m;
+    font-size: 1rem;
+    line-height:2rem;
+    height: 9vh;
+    margin-bottom: 2.2792vh;
+}

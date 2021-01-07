@@ -1,0 +1,16 @@
+@import '../../../Styles/Partials/main.scss';
+
+.container {
+    @include offset;
+    height: 16.24vh;
+    margin-bottom: 0.5rem;
+}
+
+.combine {
+    display: flex;
+    align-self: end;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    width: 95vw;
+}

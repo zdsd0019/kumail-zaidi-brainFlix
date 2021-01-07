@@ -1,0 +1,18 @@
+@import '../../Styles/Partials/main.scss';
+
+.primary_container {
+    @include divider;
+    width: 90vw;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.secondary_container {
+    display: flex;
+    padding-bottom: 4.5584vh;
+}
+
+.tertiary_container {
+    display: flex;
+}
+

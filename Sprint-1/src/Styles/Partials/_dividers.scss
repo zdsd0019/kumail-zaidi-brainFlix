@@ -1,0 +1,11 @@
+@import './colors.scss';
+
+// universal divider line
+@mixin divider {
+    border-bottom: 1rem solid $mercury;
+    border-bottom-width: thin;
+    width: 100vw;
+    color: $mercury;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}

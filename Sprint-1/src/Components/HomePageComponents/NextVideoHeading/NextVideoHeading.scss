@@ -1,0 +1,9 @@
+@import '../../../Styles/Partials/main.scss';
+
+.video_heading {
+    @include h5-labels-m;
+    font-weight: bold;
+    padding: 2.5rem 1rem;
+    width: 90vw;
+
+}

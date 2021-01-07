@@ -1,0 +1,23 @@
+@import '../../../Styles/Partials/main.scss';
+
+
+.search {
+    @include h4-list-and-contact-m;
+    font-weight: bold;
+    margin-top: 3.397461rem;
+    // margin-bottom: 1.1396vh;
+    margin-left: -24vw;
+    width: 90vw;
+    height: 8vh;
+    padding-left: 2.5rem;
+    background-image: url('../../../assets/icons/svg/icon-search.svg');
+    background-repeat: no-repeat;
+    background-position: 5%;
+    border-radius: 0.25rem;
+    border-color: $mercury;
+    background-color: $alabaster;
+    &:focus{
+        outline: none;
+        border-color: $brainflix-blue;
+    }
+}

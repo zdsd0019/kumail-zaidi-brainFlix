@@ -1,0 +1,15 @@
+@import '../../../Styles/Partials/main.scss';
+
+.tally_container {
+    @include offset;
+    @include h2-subheader-m;
+    font-size: 0.6799rem;
+    line-height: 1.25rem;
+    width: 95vw;
+    height: unset;
+    margin-bottom: 2rem;
+}
+
+.total {
+    width: 90vw;
+}

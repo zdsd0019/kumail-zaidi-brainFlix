@@ -1,0 +1,14 @@
+@import '../../../Styles/Partials/main.scss';
+
+.sync {
+    @include basic-button;
+    background-image: url('../../../assets/icons/svg/icon-upload.svg');
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+    align-self: self-end;
+    justify-self: end;
+    margin-right: -3vw;
+    &:focus{
+        outline: none;
+    }
+}

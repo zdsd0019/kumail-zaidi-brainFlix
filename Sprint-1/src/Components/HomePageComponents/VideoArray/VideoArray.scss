@@ -1,0 +1,33 @@
+@import '../../../Styles/Partials/main.scss';
+
+
+.video {
+
+    &_container {
+        display: flex;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        height: 4.375rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &_img {
+        width: 7.5rem;
+        height: 4.375rem;
+ 
+    }
+
+    &_title {
+        @include h2-subheader-m;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-left: 0.5rem;
+    }
+
+    &_author {
+        @include h4-list-and-contact-m;
+        margin-left: 0.5rem;
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+}

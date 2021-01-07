@@ -1,0 +1,50 @@
+@import '../../../Styles/Partials/main.scss';
+
+.list {
+    @include divider;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 90vw;
+    
+    &_avatar {
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &_wrapper {
+        width: 69vw;
+        margin-left: 1rem;
+    }
+
+    &_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    &_name {
+        @include h2-subheader-m;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 41.397vw;
+    }
+
+    &_date {
+        @include h4-paragraph-m;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        height: 3vh;
+        width: 27vw;
+        color: $labels;
+        padding: 0;
+    }
+
+    &_conversation {
+        @include h4-paragraph-m;
+        font-size: 0.815rem;
+        line-height: 1.3rem;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../../Styles/Partials/main.scss';
+
+.watch_container {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+}
+
+.watch {
+    width: 4vw;
+    margin-right: 0.5rem;
+
+    &_fig {
+        @include h4-paragraph-m;
+        font-size: 0.6rem;
+        line-height: 1.25rem;
+    }
+}

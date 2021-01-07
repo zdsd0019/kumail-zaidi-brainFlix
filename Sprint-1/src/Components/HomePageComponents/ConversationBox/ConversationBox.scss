@@ -1,0 +1,27 @@
+@import '../../../Styles/Partials/main.scss';
+
+.conversation {
+    width: 64vw;
+    height: 31.25vw;
+    margin-left: 1rem;
+
+    &_box {
+        @include h4-paragraph-m;
+        font-size: 0.815rem;
+        line-height: 1.35rem;
+        color: $gltsc;
+        font-weight: bolder;
+        border: 0.1rem solid $mercury;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        width: 69vw;
+        height: 6rem;
+        resize: none;
+        margin-bottom: 1rem;
+
+        &:focus {
+            outline: none;
+            border-color: $brainflix-blue;
+        }
+    }
+}

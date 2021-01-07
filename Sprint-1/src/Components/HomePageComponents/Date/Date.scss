@@ -1,0 +1,11 @@
+@import '../../../Styles/Partials/main.scss';
+
+.date_container {
+    @include h4-paragraph-m;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    height: 3vh;
+    width: 21vw;
+    color: $labels;
+    padding: 0;
+}
